@@ -1,0 +1,22 @@
+/* pages/demo/demo.wxss */
+text{
+  color:red;
+}
+.weui-input{
+  border: 1rpx solid black;
+  height: 100rpx;
+  width: 80%;
+}
+.mini-btn{
+  height: 100rpx;
+  line-height: 100rpx!important;
+}
+.search_box{
+  display: flex;
+}
+.li{
+  width: 100%;
+  height: 100rpx;
+  border: 1rpx solid black;
+  margin-top: 10rpx;
+}

@@ -1,0 +1,9 @@
+//多环境变量列表配置
+module.exports={
+  //开发环境
+  devBaseUrl:"http://123.207.32.32:8000/api/h8",
+  //测试环境
+  testBaseUrl:"https://www.test.com",
+  //生产环境
+  proBaseUrl:"https://www.prodection.com"
+}

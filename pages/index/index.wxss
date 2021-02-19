@@ -1,0 +1,50 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+.view_input{
+  display: flex;
+  justify-content: center;
+}
+.txt_input{
+  width: 60%;
+  border: 1px solid black;
+  height: 100%;
+  padding: 10px;
+}
+.list_box{
+  width: 100%;
+  /* border: 1px solid black; */
+  padding: 10px;
+
+}
+
+.list_txt{
+  display: inline-block;
+  margin-left: 20rpx;
+  line-height: 60rpx;
+  margin-top: -60rpx;
+}
+.list_del{
+  display: inline-block;
+  float: right;
+  margin-right: 20rpx;
+}
+

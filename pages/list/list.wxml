@@ -1,0 +1,51 @@
+
+<view hidden="{{showTabControl}}" class="top">
+<van-tabs active="a">
+  <van-tab title="标签 1" name="a"></van-tab>
+  <van-tab title="标签 2" name="b"></van-tab>
+  <van-tab title="标签 3" name="c"></van-tab>
+</van-tabs>
+</view>
+
+
+<scroll-view 
+scroll-y 
+lower-threshold="100" 
+id="scroller"
+bindscrolltolower="scrollToLower" 
+bindscroll="scrollPosition"
+scroll-with-animation="true"
+scroll-top="{{topPosition}}"
+style="height:100vh">
+
+<view style='height:200px;border:1px solid black;background:red'></view>
+
+<van-tabs active="a" class='xiding'>
+<van-tab title="标签 1" name="a">
+
+<view wx:for="{{listData}}" wx:key="{{index}}" style="height: 100px;border-bottom: 1px solid #f4f4f4;">
+  <van-card
+  num="2"
+  price="{{item.price}}"
+  title="{{item.title}}"
+  thumb="{{ item.show.img }}"
+  bindtap='go'
+  data-id='{{item.iid}}'
+   />
+    </view>
+    <view style="text-align: center;margin: 10px;">
+      <view wx:if="{{loading}}">加载中...</view>
+      <view wx:if="{{noMore}}">没有更多了</view>
+      <view wx:if="{{loadingFailed}}">数据加载失败,请重试</view>
+    </view>
+  
+  </van-tab>
+  <van-tab title="标签 2" name="b">内容 2</van-tab>
+  <van-tab title="标签 3" name="c">内容 3</van-tab>
+
+</van-tabs>
+  </scroll-view>
+
+<view class="toTop" hidden="{{showBackTop}}"  bindtap='onBackTop'>toTop</view>
+
+

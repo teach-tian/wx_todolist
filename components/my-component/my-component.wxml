@@ -1,0 +1,15 @@
+<view class="child">
+
+    <block wx:for="{{msg}}" wx:key='index'>
+        <text>
+        {{item}}
+        </text>
+    </block>
+
+
+    <input model:value="{{str}}"></input>
+
+    <button bindtap="send">传父</button>
+
+
+</view>

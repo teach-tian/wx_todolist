@@ -1,0 +1,28 @@
+<view>
+
+<view class="search_box">
+   <input class="weui-input" value="{{txt}}" auto-focus placeholder="将会获取焦点" bindblur="msg"/>
+
+   <button class="mini-btn" type="default" size="mini" bindtap="add">按钮</button>
+</view>
+
+<view class="list">
+
+<block wx:for="{{arr}}" wx:key='index'>
+      <view class="li">
+      <text> {{index+1}}: </text>
+      <text> {{item}} </text>
+
+      <button type="warm" size="mini" bindtap='remove' data-index='{{index}}'>删除</button>
+      </view>
+
+</block>
+
+
+<w-swiper images="{{imgList}}"></w-swiper>
+  
+
+</view>
+
+
+</view>

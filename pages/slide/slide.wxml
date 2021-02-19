@@ -1,0 +1,12 @@
+<view class="page-section page-section-spacing swiper">
+      <swiper indicator-dots="{{indicatorDots}}"
+        autoplay="{{true}}" interval="{{1000}}" duration="{{500}}">
+        <block wx:for="{{list}}" wx:key="index">
+          <swiper-item>
+            <view class="swiper-item {{item}}">
+            <image src="{{item.image}}"></image>
+            </view>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>

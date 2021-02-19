@@ -1,0 +1,86 @@
+<input class="text" type='text' placeholder='请输入内容' bindinput='getval' value='{{val}}'/>
+
+<button class="addBtn" bindtap='add'>添加</button>
+
+<view wx:for="{{list}}" wx:key="{{index}}" class="box">
+
+    <text>{{index+1}}---{{item}}</text>
+
+    <button class="cellBtn" size='mini' bindtap='del' data-index="{{index}}">删除</button>
+
+</view>
+
+<navigator navigateTo>返回</navigator>
+
+
+<!-- <view>
+
+  <image lazy-load='{{true}}' bindload='imageLoad' binderror='imageErr' src='/wetworld.jpg'/>
+
+</view> -->
+<!-- navigator组件 -->
+<!-- <view> -->
+  <!-- target属性
+      self : 当前小程序跳转（默认值）
+      miniProgram : 要跳转其他小程序时设置
+
+      hover-class,hover-stop-propagation,hover-start-time,hover-stay-time这几个属性为点击态属性，
+      这个组件有默认的值，可以根据项目需要修改，和前面讲得是一样的。
+   -->
+   <!-- 
+   当target=self时，也就是默认值（不设置的情况） 
+
+    url ： 当前小程序跳转的页面地址(这个路径我建议是写成绝对路径)
+    open-type ：  跳转方式有下面的值
+        open-type=navigate  : 保留当前页面，跳转到页面内页面（除了tabbar页面，即配置的菜单页面）
+        open-type=redirect  : 关闭当前页面，跳转到页面内页面（除了tabbar页面，即配置的菜单页面）
+        open-type=switchTab  : 关闭所有非tabar页面，跳转到tabbar页面
+        open-type=reLaunch  : 关闭所有页面，跳转到tabbar页面
+        open-type=navigateBack  : 页面回退（和delta属性一起使用，设置返回层数）
+    提示：这里只是简单介绍一下，tabbar页面配置还没讲过，先了解这个东西吧，我一般都不用这个组件，习惯用小程序api
+   -->
+  <!-- <navigator open-type='navigate' url='/pages/index/index'>跳转</navigator>
+  <navigator open-type='redirect' url='/pages/index/index'>跳转</navigator>
+  <navigator open-type='switchTab' url='/pages/index/index'>跳转</navigator>
+  <navigator open-type='reLaunch' url='/pages/index/index'>跳转</navigator>
+  <navigator open-type='navigateBack' delta="1">跳转</navigator>
+</view> -->
+
+<!-- <view wx:for='{{arr}}' wx:key='{{index}}'>
+
+   <text>
+  下标：{{index}}----值： {{item}}
+   </text>
+
+</view> -->
+<!-- 
+<view wx:for='{{array}}' wx:key='{{index}}'> 
+   <text>
+   水果名：{{item.name}}
+   </text>
+</view>
+
+
+
+ -->
+
+ <!-- <view wx:if='{{foo=="apple"}}'>
+   苹果
+ </view>
+
+ <view wx:elif='{{foo=="banana"}}'>
+   香蕉
+ </view>
+
+ <view wx:else='{{foo=="orange"}}'>
+   橘子
+ </view> -->
+
+ <import src='tem.wxml'/>
+
+
+<template is='jiyun' data='{{...obj}}'></template>
+
+
+<button bindtap='getinfo'>获取全局方法</button>
+

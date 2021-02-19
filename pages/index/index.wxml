@@ -1,0 +1,31 @@
+<!--index.wxml-->
+<view class="container">
+
+      <view class="view_input">
+        <input class="txt_input" auto-focus placeholder="输入内容" bindinput="bindKeyInput"/>
+        <button class='txt_btn' type='default' size="mini" bindtap="add">提交</button>
+      </view>
+   
+     <block wx:if='{{list.length>0}}'>
+      <view  wx:for='{{list}}' wx:key='index' class="list_box">
+
+            <text class='list_txt'>
+            {{index+1}} . {{item.value}}
+            </text>
+
+            <button type="warn" class="list_del" size="mini" catchtap="del" data-index='{{index}}'>删除</button>
+
+    
+        
+      </view>
+     </block>
+
+     <view>
+      
+      <text>
+      还剩 {{list.length}}项
+      </text>
+   
+     </view>
+     
+</view>

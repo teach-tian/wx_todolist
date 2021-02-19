@@ -1,0 +1,21 @@
+.text{
+  border: 1px solid black;
+}
+button.addBtn{
+  display: block;
+  width: 100vw;
+  height: 100rpx;
+}
+.box{
+  line-height: 100%;
+  border: 1rpx dashed black;
+  overflow: hidden;
+}
+.cellBtn{
+  margin-right: 5rpx;
+  float: right;
+}
+.b_333 {
+  margin-top: 20rpx;
+  border: 1rpx solid #333;
+}

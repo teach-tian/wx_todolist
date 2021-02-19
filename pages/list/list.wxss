@@ -1,0 +1,14 @@
+/* pages/list/list.wxss */
+.toTop{
+  position: fixed;
+  right: 20rpx;
+  bottom: 20px;
+  width: 160rpx;
+  height: 50rpx;
+  background-color: red;
+}
+.top{
+  display: fixed;
+  left: 0;
+  top:0;
+}
